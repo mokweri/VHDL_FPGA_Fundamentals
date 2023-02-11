@@ -1,0 +1,8 @@
+## Exclude all
+*
+!*/
+!.gitignore
+!*.md
+
+# VHDL source files
+!*/*.vhd
