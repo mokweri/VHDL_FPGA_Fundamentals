@@ -1,7 +1,7 @@
 
 # VHDL For FPGA : FUNDAMENTALS
 
-![Poster](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Poster](https://github.com/mokweri/VHDL_FPGA_Fundamentals/blob/main/Images/vhdl_fpga_poster.PNG)
 
 This repository contains materials for fundamentals of VHDL for FPGA: Both summary notes and source code for several Digital designs in VHDL. 
 
