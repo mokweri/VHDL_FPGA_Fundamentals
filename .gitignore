@@ -6,3 +6,6 @@
 
 # VHDL source files
 !vhdl-codes/*/*.vhd
+
+# Include Notes
+!Notes/*
