@@ -1,11 +1,5 @@
 ---------------------------------------------------------------------------
--- This VHDL file was developed by Daniel Llamocca (2013).  It may be
--- freely copied and/or distributed at no cost.  Any person using this
--- file for any purpose do so at their own risk, and are responsible for
--- the results of such use.  Daniel Llamocca does not guarantee that
--- this file is complete, correct, or fit for any particular purpose.
--- NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  This notice must
--- accompany any copy of this file.
+-- This VHDL file was developed b
 --------------------------------------------------------------------------
 
 LIBRARY ieee;
@@ -15,15 +9,15 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY tb_my_johnson_counter IS
+ENTITY tb_johnson_counter IS
     generic (N: INTEGER:= 8);
-END tb_my_johnson_counter;
+END tb_johnson_counter;
  
-ARCHITECTURE behavior OF tb_my_johnson_counter IS 
+ARCHITECTURE behavior OF tb_johnson_counter IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT my_johnson_counter
+    COMPONENT johnson_counter
     PORT(
          clock : IN  std_logic;
          resetn : IN  std_logic;
@@ -49,7 +43,7 @@ ARCHITECTURE behavior OF tb_my_johnson_counter IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: my_johnson_counter PORT MAP (
+   uut: johnson_counter PORT MAP (
           clock => clock,
           resetn => resetn,
           E => E,

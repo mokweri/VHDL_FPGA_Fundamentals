@@ -12,7 +12,7 @@ ARCHITECTURE behavior OF tb_bcd_udcount IS
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT bcd_udcount
+    COMPONENT bcd_udcount_top
     PORT(
          clock : IN  std_logic;
          resetn : IN  std_logic;
@@ -40,7 +40,7 @@ ARCHITECTURE behavior OF tb_bcd_udcount IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: bcd_udcount PORT MAP (
+   uut: bcd_udcount_top PORT MAP (
           clock => clock,
           resetn => resetn,
           E => E,

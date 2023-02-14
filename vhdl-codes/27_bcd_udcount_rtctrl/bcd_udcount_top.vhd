@@ -33,11 +33,11 @@ architecture Behavioral of bcd_udcount_top is
     signal z: std_logic;
     
 begin
-
--- a1: my_genpulse_sclr generic map (COUNT => 10) -- For simulation purposes
-   a1: genpulse_sclr generic map (COUNT => (10**8)/2) -- For actual testing: 0.5 seconds
-       port map (clock => clock, resetn => resetn, E => E, sclr => '0', z => z);
-   a2: bcd_udcount port map (clock =>  clock, resetn => resetn, E => z , ud => ud, Q => Q);
+    
+  --a1: genpulse_sclr generic map (COUNT => (10**8)/2) -- For actual testing: 0.5 seconds
+  a1: genpulse_sclr generic map (COUNT => 10) -- For simulation purposes
+      port map (clock => clock, resetn => resetn, E => E, sclr => '0', z => z);
+  a2: bcd_udcount port map (clock =>  clock, resetn => resetn, E => z , ud => ud, Q => Q);
 
 end Behavioral;
 
